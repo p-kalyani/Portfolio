@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Java Full Stack Developer Portfolio - Spring Boot, React, MySQL projects">
+    <title>Kalyani | Java Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/portfoliostyle.css">
+</head>
+
+<body>
+    <!-- Particles Float Background-->
+    <canvas class="particles"></canvas>
+    <!--Nav Section-->
+    <header class="headsec">
+        <nav>
+            <div class="name">
+                <a href="#hero"  style="text-decoration:none; color:#38bdf8;">
+                    <h2>Kalyani Perisetla</h2>
+                </a>
+            </div>
+            <!-- Menu Toggle -->
+            <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="links">
+                <div class="main-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="resume-link">
+                    <a href="resume/Kalyani_dev_Resume.pdf" download>
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="herosec sec fade-in" id="hero">
+            <div class="hero-container">
+                <div class="main">
+                    <h1>
+                        Hi, I'm Kalyani
+                    </h1>
+
+                    <p>
+                        <span id="typing"></span>
+                    </p>
+
+                    <div class="hero-butns">
+                        <a href="#projects" class="btn">Explore My Work</a>
+                        <a href="https://github.com/p-kalyani" target="_blank" class="butn"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img src="images/profileimage.png" alt="profile image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="sec fade-in">
+            <h2>About Me</h2>
+            <p id="aboutp">
+                I am a Java Full Stack Developer with 1 year of professional experience, primarily
+                focused on backend development using Java and Spring Boot. I have worked on enterprise-level
+                applications, handling backend logic and database operations using MySQL.
+                <br><br>
+                I began my career in an HR role, where I gained exposure to business processes,
+                before transitioning into a Junior Java Developer role based on my technical skills and
+                interest in software development.
+                <br><br>
+                Alongside my backend experience, I have hands-on knowledge of frontend development using HTML,
+                CSS, JavaScript and React, and I am actively building frontend projects to strengthen my
+                full-stack development capabilities.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="sec fade-in">
+            <h2>Technical Skills</h2>
+
+            <div class="skills-wrapper">
+
+                <!-- Programming Skills -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-code"></i> Programming</h3>
+                    <div class="skills-container">
+                        <div class="box"><i class="fa-brands fa-java"></i> Java</div>
+                        <div class="box"><i class="fa-brands fa-js"></i> JavaScript</div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills-->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                    <div class="skills-container">
+                        <div class="box"><i class="fa-solid fa-leaf"></i> Spring Boot</div>
+                    </div>
+                </div>
+
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+                    <div class="skills-container">
+                        <div class="box"><i class="fa-brands fa-html5"></i> HTML</div>
+                        <div class="box"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                        <div class="box"><i class="fa-brands fa-react"></i> React</div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                    <div class="skills-container">
+                        <div class="box"><i class="fa-solid fa-database"></i> MySQL</div>
+                        <div class="box"><i class="fa-solid fa-database"></i> PostgreSQL</div>
+                    </div>
+                </div>
+
+                <!-- Tools / Platforms -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+                    <div class="skills-container">
+                        <div class="box"><i class="fa-brands fa-github"></i> GitHub</div>
+                        <div class="box"><i class="fa-brands fa-git-alt"></i> Git</div>
+                        <div class="box"><i class="fa-solid fa-bug"></i> Jira</div>
+                        <div class="box"><i class="fa-solid fa-envelope"></i> Outlook</div>
+                        <div class="box"><i class="fa-solid fa-headset"></i> Zendesk</div>
+                        <div class="box"><i class="fa-solid fa-laptop"></i> Eclipse</div>
+                    </div>
+                </div>
+
+                <!-- Cloud Skills-->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-cloud"></i> Cloud</h3>
+                    <div class="skills-container">
+                        <div class="box"><i class="fa-brands fa-aws"></i> AWS (Basic)</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="sec fade-in">
+            <h2 class="sec-title">Projects</h2>
+
+            <div class="project-container">
+
+                <!-- Personal Portfolio Project -->
+                <div class="project-card">
+
+                    <div class="project-header">
+                        <h3>Developer Portfolio Website</h3>
+                        <span class="project-tagline">Personal portfolio showcasing skills and projects</span>
+                        <span class="project-tech">HTML • CSS • JavaScript</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Built a modern, responsive portfolio website to highlight technical skills, projects, and
+                        professional experience.
+                    </p>
+
+                    <div class="project-buttons">
+                        <a href="https://github.com/p-kalyani/Portfolio/tree/main" target="_blank" class="github-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://p-kalyani.github.io/Portfolio/" target="_blank" class="demo-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Project 1: Confidential Company Project (B2B) -->
+                <div class="project-card">
+
+                    <div class="project-header">
+                        <h3>B2B Credit Management System</h3>
+                        <span class="project-tagline">Enterprise internal system for managing customer credit
+                            workflows</span>
+                        <span class="project-tech">Java • Spring Boot • MySQL • Postman • Jira</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Developed an internal B2B application to streamline credit approvals, reporting, and secure data
+                        handling for business teams.
+                    </p>
+
+                    <div class="project-role">
+                        <h4>My Contributions</h4>
+                        <ul>
+                            <li>Implemented backend report extensions using Java and MySQL, improving efficiency.</li>
+                            <li>Tested and validated APIs with Postman to ensure reliable data flow.</li>
+                            <li>Developed JWT token management for secure backend operations.</li>
+                            <li>Tracked development tasks and bugs using Jira, ensuring smooth workflow.</li>
+                            <li>Resolved internal customer issues through Zendesk, enhancing team satisfaction.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Project 2: Confidential Company Project (Customer) -->
+                <div class="project-card">
+
+                    <div class="project-header">
+                        <h3>Customer UI Application</h3>
+                        <span class="project-tagline">Internal interface for managing customer data and workflows</span>
+                        <span class="project-tech">HTML • CSS • UI Testing</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Internal customer application used by business teams to access and manage customer-related data
+                        efficiently.
+                    </p>
+
+                    <div class="project-role">
+                        <h4>My Contributions</h4>
+                        <ul>
+                            <li>Performed UI testing and identified functional defects.</li>
+                            <li>Fixed dropdown and form-related issues to improve usability.</li>
+                            <li>Resolved styling inconsistencies, ensuring uniform colors and fonts.</li>
+                            <li>Updated UI text, headings, and labels for better clarity.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="sec fade-in">
+
+            <h2>Contact Me</h2>
+
+            <div class="contact-wrapper">
+
+
+                <!-- Left Side Links -->
+
+                <div class="contact-info">
+
+                    <a href="mailto:kalyanippyn@gmail.com">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
+
+                    <a href="https://github.com/p-kalyani">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+
+                </div>
+
+
+                <!-- Right Side Form -->
+
+                <form class="contact-form" id="contactForm">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit" id="submitBtn">Send Message</button>
+
+<p id="formMessage"></p>
+
+</form>
+
+            </div>
+
+        </section>
+
+    </main>
+<!-- Footer -->
+    <footer>
+        <p><i class="fa-regular fa-copyright"></i> 2026 Kalyani Perisetla - Built with HTML, CSS & JavaScript</p>
+    </footer>
+<!-- Add Script -->
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
